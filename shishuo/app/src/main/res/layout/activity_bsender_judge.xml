@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_bsender_judge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="标题"
+        app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:clickable="true"
+        android:titleTextColor="@color/write"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom"
+        card_view:cardCornerRadius="5dp"
+        android:layout_weight="9"
+        card_view:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:ellipsize="marquee"
+                    android:id="@+id/author_bsender_judge"
+                    android:textIsSelectable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/comment_bsender_judge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoLink="all"
+                    android:scrollbars="vertical"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/content_bsender_judge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:maxLines="2"
+            android:background="@drawable/edit_shape"
+            android:hint="发送是否收录" />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/send_bsender_judge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="发送"
+            android:background="@drawable/button_shape_circle"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/discuzz_bsender_judge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@mipmap/chat" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

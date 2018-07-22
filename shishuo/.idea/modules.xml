@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BGAPhotoPicker/BGAPhotoPicker.iml" filepath="$PROJECT_DIR$/BGAPhotoPicker/BGAPhotoPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeBackLayout/SwipeBackLayout.iml" filepath="$PROJECT_DIR$/SwipeBackLayout/SwipeBackLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appupdate/appupdate.iml" filepath="$PROJECT_DIR$/appupdate/appupdate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltoreflash/pulltoreflash.iml" filepath="$PROJECT_DIR$/pulltoreflash/pulltoreflash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shishuo.iml" filepath="$PROJECT_DIR$/shishuo.iml" />
+    </modules>
+  </component>
+</project>

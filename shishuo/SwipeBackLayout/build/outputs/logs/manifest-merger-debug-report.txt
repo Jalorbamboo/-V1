@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml:1:1-56
+INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml:1:1-56
+INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml:1:1-56
+	package
+		ADDED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml:1:11-54
+		INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml:1:1-56
+uses-sdk
+INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jalor\AndroidStudioProjects\shishuo\SwipeBackLayout\src\main\AndroidManifest.xml

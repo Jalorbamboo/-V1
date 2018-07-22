@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fsyz.shishuo">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 推送所需的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 安装的权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 二维码的权限，不给会没有得用 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="cn.fsyz.shishuo.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
+        <activity
+            android:name="cn.fsyz.shishuo.Main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.fsyz.shishuo.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.UserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Full">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.fsyz.shishuo.Main.SendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.fsyz.shishuo.SighActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.MessageDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.WhiteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.WhiteSendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.fsyz.shishuo.DetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.PushActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.ADActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Full" />
+        <activity
+            android:name="cn.fsyz.shishuo.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.settings.Systeminfo_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.PhotoActivity"
+            android:label="查看图片"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.White_MessageDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- TODO 集成：1.2、添加推送所需要的服务和广播 -->
+        <service
+            android:name="cn.bmob.push.lib.service.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":bmobpush">
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService" />
+            </intent-filter>
+        </service>
+
+        <!-- 用于进程保活 -->
+        <service
+            android:name="cn.bmob.push.lib.service.PushNotifyService"
+            android:process=":bmobpush" />
+
+        <receiver android:name="cn.bmob.push.PushReceiver">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 解锁完成后会调用 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 监听网络连通性 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 第3步中创建的消息接收器，在这里进行注册 -->
+        <receiver android:name="cn.fsyz.shishuo.MyPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.bmob.push.action.MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 接收心跳和唤醒的广播，要和PushService运行在同个进程 -->
+        <receiver
+            android:name="cn.bmob.push.PushNotifyReceiver"
+            android:process=":bmobpush">
+            <intent-filter>
+
+                <!-- 接收心跳广播的action -->
+                <action android:name="cn.bmob.push.action.HEARTBEAT" />
+                <!-- 接收唤醒广播的action -->
+                <action android:name="cn.bmob.push.action.NOTIFY" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- 集成安装服务 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+        android:authorities="${applicationId}"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/intall_paths" />
+    </provider>
+
+        <activity
+            android:name="cn.fsyz.shishuo.settings.UpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.UserDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.EnsureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.settings.copyrightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.CallBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.ControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Light_and_darkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.HuodongActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.HuoDong_SendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.Huodong_detailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.TalkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.TalkOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.TalklistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.TalkDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.HighsettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.JoinNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="cn.fsyz.shishuo.Main.Nosad_SendActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.fsyz.shishuo.Main.Nosad_DetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.fsyz.shishuo.Main.Nosad_MyMailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.fsyz.shishuo.Main.Nosad_managerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.fsyz.shishuo.Main.Nosad_respondActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.fsyz.shishuo.Main.no_mail_detailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="cn.fsyz.shishuo.Developing"
+            android:label="官方通知"/>
+        <activity
+            android:name="cn.fsyz.shishuo.Main.BSenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.BsenderWriteActivity"
+            android:label="投稿"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.BsenderlistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.fsyz.shishuo.Main.BsenderJudgeActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+    </application>
+
+</manifest>

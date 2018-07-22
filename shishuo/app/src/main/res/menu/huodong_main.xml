@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/delete_huodong"
+        android:orderInCategory="100"
+        android:title="@string/dalete"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/join_number"
+        android:orderInCategory="100"
+        android:title="查看参与人员"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/huodong_qr_code"
+        android:orderInCategory="100"
+        android:title="生成活动二维码"
+        app:showAsAction="never" />
+</menu>

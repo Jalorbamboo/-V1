@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4180fe</color>
+    <color name="colorPrimaryDark">#4180fe</color>
+    <color name="colorAccent">#4180fe</color>
+    <color name="startcolor">#50C81AFA</color>
+    <color name="endcolor">#907529FD</color>
+    <color name="dark">#88000000</color>
+    <color name="write">#FFFCFCFC</color>
+    <color name="deepgrey">#4c4a4a</color>
+    <color name="btn_press">#4180fe</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimaryDarkTrans">#CC4CAF50</color>
+</resources>

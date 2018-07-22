@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_sys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="标题"
+        android:titleTextColor="@color/write"/>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+    <ListView
+        android:id="@+id/sys_listView"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        />
+
+    <TextView
+        android:id="@+id/sys_no."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="版本："
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/sys_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textIsSelectable="true"
+        android:textSize="25dp" />
+</LinearLayout>
+
+
+
+</LinearLayout>

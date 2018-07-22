@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.fsyz.shishuo.Main.no_mail_detailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_no_mail_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:minHeight="?attr/actionBarSize"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:theme="?attr/actionBarTheme"
+        android:titleTextColor="@color/write"
+        app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:title="标题" />
+
+    <TextView
+        android:id="@+id/no_mail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="加载中" />
+
+</LinearLayout>

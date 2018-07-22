@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.fsyz.shishuo.Main.Nosad_SendActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_bsender_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="标题"
+        app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:titleTextColor="@color/write"/>
+
+    <EditText
+        android:id="@+id/nosad_bsender_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minLines="15"
+        android:layout_weight="5"
+        android:gravity="top"
+        android:hint="请写下你的广播稿" />
+
+
+
+
+</LinearLayout>

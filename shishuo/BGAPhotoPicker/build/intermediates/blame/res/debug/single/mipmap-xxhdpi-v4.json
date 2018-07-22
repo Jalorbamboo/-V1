@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_cb_normal.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_cb_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_cb_checked.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_cb_checked.png"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_delete.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_delete.png"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_holder_light.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_holder_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_camera.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_camera.png"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_download.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_download.png"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_arrow_down.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_arrow_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_holder_dark.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_holder_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\bga_pp_ic_plus.png",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_plus.png"
+    }
+]

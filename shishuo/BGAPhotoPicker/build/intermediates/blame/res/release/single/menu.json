@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\release\\menu\\bga_pp_menu_photo_preview.xml",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\menu\\bga_pp_menu_photo_preview.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\release\\menu\\bga_pp_menu_photo_picker_preview.xml",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\menu\\bga_pp_menu_photo_picker_preview.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\build\\intermediates\\res\\merged\\release\\menu\\bga_pp_menu_photo_picker.xml",
+        "source": "C:\\Users\\Jalor\\AndroidStudioProjects\\shishuo\\BGAPhotoPicker\\src\\main\\res\\menu\\bga_pp_menu_photo_picker.xml"
+    }
+]

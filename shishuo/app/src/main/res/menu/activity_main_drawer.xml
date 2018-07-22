@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    </group>
+
+
+    <item android:title="社交">
+        <menu>
+            <item
+                android:id="@+id/nav_Bsender"
+                android:title="广播站投稿" />
+            <item
+                android:id="@+id/nav_activity"
+                android:title="社团活动" />
+            <item
+                android:id="@+id/nav_whitemessage"
+                android:title="真心话" />
+            <item
+                android:id="@+id/nosad_receive"
+                android:title="我给爷爷写的信" />
+        </menu>
+    </item>
+    <item android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/nav_pic"
+                android:title="我的资料" />
+            <item
+                android:id="@+id/nav_share"
+                android:title="分享诗说" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="反馈bug给攻城狮" />
+            <item
+                android:id="@+id/settings"
+                android:title="@string/action_settings" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/manager"
+        android:orderInCategory="100"
+        android:title="进入管理层"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nosad_manager"
+        android:orderInCategory="100"
+        android:title="进入解忧回答"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/talk_manager"
+        android:orderInCategory="100"
+        android:title="进入话题发布"
+        app:showAsAction="never" />
+</menu>

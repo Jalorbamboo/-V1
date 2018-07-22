@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_talk_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="标题"
+        app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:titleTextColor="@color/write"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/send_talk_open"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/title_talk_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="本周讨论的话题标题"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/content_talk_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="讨论话题的材料"
+                android:minLines="15" />
+
+            <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                android:id="@+id/snpl_moment_add_photos_talk_open"
+                style="@style/WrapWrap"
+                android:layout_margin="10dp"
+                app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                app:bga_snpl_editable="true"
+                app:bga_snpl_itemCornerRadius="0dp"
+                app:bga_snpl_itemSpanCount="3"
+                app:bga_snpl_itemWhiteSpacing="4dp"
+                app:bga_snpl_itemWidth="0dp"
+                app:bga_snpl_maxItemCount="9"
+                app:bga_snpl_otherWhiteSpacing="100dp"
+                app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
+                app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
+                app:bga_snpl_plusEnable="true"
+                app:bga_snpl_sortable="true" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="发布话题"
+        android:id="@+id/send_talk_open" />
+
+</RelativeLayout>
